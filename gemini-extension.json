@@ -1,0 +1,14 @@
+{
+  "name": "firecrawl",
+  "version": "1.1.0",
+  "description": "Search the web, scrape any page into clean Markdown or structured data, and interact with live pages through the hosted Firecrawl MCP server.",
+  "mcpServers": {
+    "firecrawl": {
+      "type": "http",
+      "url": "https://mcp.firecrawl.dev/v2/mcp-oauth",
+      "headers": {
+        "X-Firecrawl-Origin": "firecrawl-gemini-extension"
+      }
+    }
+  }
+}

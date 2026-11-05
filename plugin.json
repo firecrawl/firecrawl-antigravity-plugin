@@ -1,0 +1,22 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "firecrawl",
+  "displayName": "Firecrawl",
+  "version": "1.1.0",
+  "description": "Search the web, scrape any page into clean Markdown or structured data, and interact with live pages through the hosted Firecrawl MCP server.",
+  "logo": "assets/logo.svg",
+  "suggestedPrompts": [
+    "Use Firecrawl to find the current upgrade guide for this project's main framework and list what we'd need to change",
+    "Scrape the pricing pages of our top three competitors into a comparison table",
+    "Map the docs site for a library we use and summarize the pages relevant to this feature"
+  ],
+  "author": {
+    "name": "Firecrawl",
+    "email": "help@firecrawl.dev",
+    "url": "https://www.firecrawl.dev"
+  },
+  "homepage": "https://docs.firecrawl.dev/quickstarts/antigravity",
+  "repository": "https://github.com/firecrawl/firecrawl-antigravity-plugin",
+  "license": "MIT",
+  "keywords": ["firecrawl", "web-search", "scraping", "crawling", "browser", "mcp"]
+}
