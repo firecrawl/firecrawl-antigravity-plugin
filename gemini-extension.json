@@ -1,6 +1,6 @@
 {
   "name": "firecrawl",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Search the web, scrape any page into clean Markdown or structured data, and interact with live pages through the hosted Firecrawl MCP server.",
   "mcpServers": {
     "firecrawl": {
