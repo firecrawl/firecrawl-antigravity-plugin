@@ -2,12 +2,12 @@
 
 > Generated from Firecrawl's plugin source. Do not edit this repository by hand; changes made here are overwritten by the next sync.
 
-Firecrawl is the context API for AI agents. This package connects Gemini CLI and Google Antigravity to the hosted [Firecrawl MCP server](https://docs.firecrawl.dev/mcp-server/oauth) to search the web, read pages, collect structured data, interact with live pages, and track changes. One repository serves both: Gemini CLI reads `gemini-extension.json`, and Antigravity reads `plugin.json` and `mcp_config.json`.
+Firecrawl is the context API for AI agents. This package connects Gemini CLI and Google Antigravity to the hosted [Firecrawl MCP server](https://docs.firecrawl.dev/mcp-server/oauth) to search the web, read pages, collect structured data, interact with live pages, and track changes. One repository serves both: Gemini CLI reads `gemini-extension.json`, and Antigravity reads `.antigravity-plugin/plugin.json` and `mcp_config.json`.
 
 ## What's included
 
 - `gemini-extension.json`: the Gemini CLI extension manifest, with the hosted MCP server at `https://mcp.firecrawl.dev/v2/mcp-oauth`
-- `plugin.json` and `mcp_config.json`: the Antigravity plugin manifest and its MCP server definition
+- `.antigravity-plugin/plugin.json` and `mcp_config.json`: the Antigravity plugin manifest and its MCP server definition
 - `skills/firecrawl`: routes each request to the right Firecrawl tool (search, scrape, Alexandria data providers, agent, map and crawl, interact, parse, monitors, developer, paper and US government search), with a reference per operation
 - `skills/firecrawl-deep-research`: cited, multi-source investigations, comparisons, prospect discovery and enrichment
 
@@ -53,7 +53,7 @@ Antigravity, in `~/.gemini/config/mcp_config.json`:
 {
   "mcpServers": {
     "firecrawl-key": {
-      "serverUrl": "https://mcp.firecrawl.dev/v2/mcp",
+      "url": "https://mcp.firecrawl.dev/v2/mcp",
       "headers": { "x-firecrawl-api-key": "YOUR_API_KEY" }
     }
   }
