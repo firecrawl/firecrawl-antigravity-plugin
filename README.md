@@ -8,7 +8,7 @@ Firecrawl is the context API for AI agents. This package connects Gemini CLI and
 
 - `gemini-extension.json`: the Gemini CLI extension manifest, with the hosted MCP server at `https://mcp.firecrawl.dev/v2/mcp-oauth`
 - `.antigravity-plugin/plugin.json` and `mcp_config.json`: the Antigravity plugin manifest and its MCP server definition
-- `skills/firecrawl`: routes each request to the right Firecrawl tool (search, scrape, Alexandria data providers, agent, map and crawl, interact, parse, monitors, developer, paper and US government search), with a reference per operation
+- `skills/firecrawl`: routes each request to the right Firecrawl tool (search, scrape, Alexandria data providers, people and company search and enrichment, agent, map and crawl, interact, parse, monitors, developer, paper and US government search), with a reference per operation
 - `skills/firecrawl-deep-research`: cited, multi-source investigations, comparisons, prospect discovery and enrichment
 
 ## Install
@@ -63,7 +63,7 @@ Antigravity, in `~/.gemini/config/mcp_config.json`:
 ## Capabilities
 
 - **Search**: web, news and image search with query-relevant excerpts, plus matching Alexandria data providers
-- **Scrape**: any URL to clean Markdown, JSON with a schema, a grounded answer or verbatim highlights
+- **Scrape**: any URL to clean Markdown, a grounded answer or verbatim highlights
 - **Alexandria**: discover catalogued data providers and execute them for structured records
 - **Agent**: autonomous multi-source collection into structured data
 - **Map and crawl**: list a site's URLs or collect a bounded section
